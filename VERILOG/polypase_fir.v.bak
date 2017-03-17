@@ -1,0 +1,332 @@
+//decimation
+
+module polypase_fir(clk,rst_n,data_out,fir_out);
+`define OUT_WIDTH 8
+`define FIR_OUTS_SIZE 20
+`define FIR_OUT_SIZE 23 //20为每个FIR位宽，+3表示8相叠加后的位宽，在data_fir中定义过了，但是这里文件要覆盖它！
+`define PHASE_NUM 8
+`define PHASE_BIT 3
+
+input clk;      //定义系统时钟
+input rst_n;    //复位信号
+output [`OUT_WIDTH-1:0] data_out;      //输出波形数据
+output [`OUT_WIDTH-1:0] fir_out;      //输出波形数据
+
+wire data_change;
+wire [`OUT_WIDTH-1:0] data_reg;      //输出波形数据
+
+
+
+//----------输出信号产生模块----------
+wave_add 
+ #( .fword1(10'd8), .fword2(10'd41))
+iadd2 (
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_change(data_change),
+	.data_out(data_reg)
+);
+assign data_out = data_reg - `OUT_WIDTH'd128;//数据滤波前先归一化为有符号数
+
+//----------相位分解模块----------
+reg [`OUT_WIDTH-1:0] data_outs[0:`PHASE_NUM-1];//二维数组，保持各相滤波器的输输入数据
+reg [0:0] clks[0:`PHASE_NUM-1];//二维数组，保持各相滤波器的输输入时钟
+//时钟产生用于产生下采样和抽取信号
+reg  [`PHASE_BIT-1:0]  cnt;
+always @(posedge clk or negedge rst_n)  begin
+	if(~rst_n)
+  		cnt <= `PHASE_BIT'd0;
+	else 
+		cnt <= cnt + 1'b1;
+end
+//选择信号作为滤波器的输入
+// reg  [`PHASE_BIT-1:0] m;//循环实现无法成功
+// always @(cnt or data_out or clk) begin
+// 	for (m=0;m<`PHASE_NUM;m=m+1) begin
+// 		if (m==cnt) begin
+// 				data_outs[m] = data_out;
+// 				clks[m]      = clk;
+// 			end
+// 		else begin
+// 				data_outs[m] =`OUT_WIDTH'd0;
+// 				clks[m]      = 1'd0;
+// 			end
+// 		end
+// end
+always @(posedge clk or negedge rst_n) begin
+   if(!rst_n) begin
+			data_outs[0] = `OUT_WIDTH'd0;
+			clks[0]      = 1'd0;
+			data_outs[1] = `OUT_WIDTH'd0;
+			clks[1]      = 1'd0;
+			data_outs[2] = `OUT_WIDTH'd0;
+			clks[2]      = 1'd0;
+			data_outs[3] = `OUT_WIDTH'd0;
+			clks[3]      = 1'd0;
+			data_outs[4] = `OUT_WIDTH'd0;
+			clks[4]      = 1'd0;
+			data_outs[5] = `OUT_WIDTH'd0;
+			clks[5]      = 1'd0;
+			data_outs[6] = `OUT_WIDTH'd0;
+			clks[6]      = 1'd0;
+			data_outs[7] = `OUT_WIDTH'd0;
+			clks[7]      = 1'd0;
+		 end
+	else begin
+		case (cnt)
+			`PHASE_BIT'd0:begin
+				data_outs[0] = data_out;
+				clks[0]      = clk;
+				data_outs[1] = `OUT_WIDTH'd0;
+				clks[1]      = 1'd0;
+				data_outs[2] = `OUT_WIDTH'd0;
+				clks[2]      = 1'd0;
+				data_outs[3] = `OUT_WIDTH'd0;
+				clks[3]      = 1'd0;
+				data_outs[4] = `OUT_WIDTH'd0;
+				clks[4]      = 1'd0;
+				data_outs[5] = `OUT_WIDTH'd0;
+				clks[5]      = 1'd0;
+				data_outs[6] = `OUT_WIDTH'd0;
+				clks[6]      = 1'd0;
+				data_outs[7] = `OUT_WIDTH'd0;
+				clks[7]      = 1'd0;
+			end
+
+			`PHASE_BIT'd1:begin
+				data_outs[0] = `OUT_WIDTH'd0;
+				clks[0]      = 1'd0;
+				data_outs[1] = data_out;
+				clks[1]      = clk;
+				data_outs[2] = `OUT_WIDTH'd0;
+				clks[2]      = 1'd0;
+				data_outs[3] = `OUT_WIDTH'd0;
+				clks[3]      = 1'd0;
+				data_outs[4] = `OUT_WIDTH'd0;
+				clks[4]      = 1'd0;
+				data_outs[5] = `OUT_WIDTH'd0;
+				clks[5]      = 1'd0;
+				data_outs[6] = `OUT_WIDTH'd0;
+				clks[6]      = 1'd0;
+				data_outs[7] = `OUT_WIDTH'd0;
+				clks[7]      = 1'd0;
+			end
+
+			`PHASE_BIT'd2:begin
+				data_outs[0] = `OUT_WIDTH'd0;
+				clks[0]      = 1'd0;
+				data_outs[1] = `OUT_WIDTH'd0;
+				clks[1]      = 1'd0;
+				data_outs[2] = data_out;
+				clks[2]      = clk;
+				data_outs[3] = `OUT_WIDTH'd0;
+				clks[3]      = 1'd0;
+				data_outs[4] = `OUT_WIDTH'd0;
+				clks[4]      = 1'd0;
+				data_outs[5] = `OUT_WIDTH'd0;
+				clks[5]      = 1'd0;
+				data_outs[6] = `OUT_WIDTH'd0;
+				clks[6]      = 1'd0;
+				data_outs[7] = `OUT_WIDTH'd0;
+				clks[7]      = 1'd0;
+			end
+
+			`PHASE_BIT'd3:begin
+				data_outs[0] = `OUT_WIDTH'd0;
+				clks[0]      = 1'd0;
+				data_outs[1] = `OUT_WIDTH'd0;
+				clks[1]      = 1'd0;
+				data_outs[2] = `OUT_WIDTH'd0;
+				clks[2]      = 1'd0;
+				data_outs[3] = data_out;
+				clks[3]      = clk;
+				data_outs[4] = `OUT_WIDTH'd0;
+				clks[4]      = 1'd0;
+				data_outs[5] = `OUT_WIDTH'd0;
+				clks[5]      = 1'd0;
+				data_outs[6] = `OUT_WIDTH'd0;
+				clks[6]      = 1'd0;
+				data_outs[7] = `OUT_WIDTH'd0;
+				clks[7]      = 1'd0;
+			end
+
+			`PHASE_BIT'd4:begin
+				data_outs[0] = `OUT_WIDTH'd0;
+				clks[0]      = 1'd0;
+				data_outs[1] = `OUT_WIDTH'd0;
+				clks[1]      = 1'd0;
+				data_outs[2] = `OUT_WIDTH'd0;
+				clks[2]      = 1'd0;
+				data_outs[3] = `OUT_WIDTH'd0;
+				clks[3]      = 1'd0;
+				data_outs[4] = data_out;
+				clks[4]      = clk;
+				data_outs[5] = `OUT_WIDTH'd0;
+				clks[5]      = 1'd0;
+				data_outs[6] = `OUT_WIDTH'd0;
+				clks[6]      = 1'd0;
+				data_outs[7] = `OUT_WIDTH'd0;
+				clks[7]      = 1'd0;
+			end
+
+			`PHASE_BIT'd5:begin
+				data_outs[0] = `OUT_WIDTH'd0;
+				clks[0]      = 1'd0;
+				data_outs[1] = `OUT_WIDTH'd0;
+				clks[1]      = 1'd0;
+				data_outs[2] = `OUT_WIDTH'd0;
+				clks[2]      = 1'd0;
+				data_outs[3] = `OUT_WIDTH'd0;
+				clks[3]      = 1'd0;
+				data_outs[4] = `OUT_WIDTH'd0;
+				clks[4]      = 1'd0;
+				data_outs[5] = data_out;
+				clks[5]      = clk;
+				data_outs[6] = `OUT_WIDTH'd0;
+				clks[6]      = 1'd0;
+				data_outs[7] = `OUT_WIDTH'd0;
+				clks[7]      = 1'd0;
+			end
+
+			`PHASE_BIT'd6:begin
+				data_outs[0] = `OUT_WIDTH'd0;
+				clks[0]      = 1'd0;
+				data_outs[1] = `OUT_WIDTH'd0;
+				clks[1]      = 1'd0;
+				data_outs[2] = `OUT_WIDTH'd0;
+				clks[2]      = 1'd0;
+				data_outs[3] = `OUT_WIDTH'd0;
+				clks[3]      = 1'd0;
+				data_outs[4] = `OUT_WIDTH'd0;
+				clks[4]      = 1'd0;
+				data_outs[5] = `OUT_WIDTH'd0;
+				clks[5]      = 1'd0;
+				data_outs[6] = data_out;
+				clks[6]      = clk;
+				data_outs[7] = `OUT_WIDTH'd0;
+				clks[7]      = 1'd0;
+			end
+
+			`PHASE_BIT'd7:begin
+				data_outs[0] = `OUT_WIDTH'd0;
+				clks[0]      = 1'd0;
+				data_outs[1] = `OUT_WIDTH'd0;
+				clks[1]      = 1'd0;
+				data_outs[2] = `OUT_WIDTH'd0;
+				clks[2]      = 1'd0;
+				data_outs[3] = `OUT_WIDTH'd0;
+				clks[3]      = 1'd0;
+				data_outs[4] = `OUT_WIDTH'd0;
+				clks[4]      = 1'd0;
+				data_outs[5] = `OUT_WIDTH'd0;
+				clks[5]      = 1'd0;
+				data_outs[6] = `OUT_WIDTH'd0;
+				clks[6]      = 1'd0;
+				data_outs[7] = data_out;
+				clks[7]      = clk;
+			end
+		endcase
+	end//else
+end//always
+
+
+//----------数组初始化----------
+// initial
+// begin
+// 	fir_outs[0] = `FIR_OUT_SIZE'd0;
+// 	fir_outs[1] = `FIR_OUT_SIZE'd0;
+// 	fir_outs[2] = `FIR_OUT_SIZE'd0;
+// 	fir_outs[3] = `FIR_OUT_SIZE'd0;
+// 	fir_outs[4] = `FIR_OUT_SIZE'd0;
+// 	fir_outs[5] = `FIR_OUT_SIZE'd0;
+// 	fir_outs[6] = `FIR_OUT_SIZE'd0;
+// 	fir_outs[7] = `FIR_OUT_SIZE'd0;
+// end 
+// assign fir_outs[0][22:20] = 3'd0;
+// assign fir_outs[1][22:20] = 3'd0;
+// assign fir_outs[2][22:20] = 3'd0;
+// assign fir_outs[3][22:20] = 3'd0;
+// assign fir_outs[4][22:20] = 3'd0;
+// assign fir_outs[5][22:20] = 3'd0;
+// assign fir_outs[6][22:20] = 3'd0;
+// assign fir_outs[7][22:20] = 3'd0;
+
+
+//----------滤波器映射----------
+wire [`FIR_OUTS_SIZE-1:0] fir_outs[0:`PHASE_NUM-1];//二维数组，保持各相滤波器的输输出数据
+hdec_1_Verilog hn1(
+	.clk(clks[0]),
+	.reset(rst_n),
+	.X(data_outs[0]),
+	.Y(fir_outs[0])
+	);
+
+hdec_2_Verilog hn2(
+	.clk(clks[1]),
+	.reset(rst_n),
+	.X(data_outs[1]),
+	.Y(fir_outs[1])
+	);
+
+hdec_3_Verilog hn3(
+	.clk(clks[2]),
+	.reset(rst_n),
+	.X(data_outs[2]),
+	.Y(fir_outs[2])
+	);
+
+hdec_4_Verilog hn4(
+	.clk(clks[3]),
+	.reset(rst_n),
+	.X(data_outs[3]),
+	.Y(fir_outs[3])
+	);
+
+hdec_5_Verilog hn5(
+	.clk(clks[4]),
+	.reset(rst_n),
+	.X(data_outs[4]),
+	.Y(fir_outs[4])
+	);
+
+hdec_6_Verilog hn6(
+	.clk(clks[5]),
+	.reset(rst_n),
+	.X(data_outs[5]),
+	.Y(fir_outs[5])
+	);
+
+hdec_7_Verilog hn7(
+	.clk(clks[6]),
+	.reset(rst_n),
+	.X(data_outs[6]),
+	.Y(fir_outs[6])
+	);
+
+hdec_8_Verilog hn8(
+	.clk(clks[7]),
+	.reset(rst_n),
+	.X(data_outs[7]),
+	.Y(fir_outs[7])
+	);
+
+reg [`FIR_OUT_SIZE-1:0] fir_out_reg;//二维数组，保持各相滤波器的输输出数据
+wire [`FIR_OUT_SIZE-1:0] fir_outs_reg[0:`PHASE_NUM-1];//二维数组，保持各相滤波器的输输出数据
+//符号位扩展
+assign fir_outs_reg[0] = fir_outs[0][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[0]}:{`PHASE_BIT'b111, fir_outs[0]};
+assign fir_outs_reg[1] = fir_outs[1][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[1]}:{`PHASE_BIT'b111, fir_outs[1]};
+assign fir_outs_reg[2] = fir_outs[2][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[2]}:{`PHASE_BIT'b111, fir_outs[2]};
+assign fir_outs_reg[3] = fir_outs[3][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[3]}:{`PHASE_BIT'b111, fir_outs[3]};
+assign fir_outs_reg[4] = fir_outs[4][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[4]}:{`PHASE_BIT'b111, fir_outs[4]};
+assign fir_outs_reg[5] = fir_outs[5][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[5]}:{`PHASE_BIT'b111, fir_outs[5]};
+assign fir_outs_reg[6] = fir_outs[6][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[6]}:{`PHASE_BIT'b111, fir_outs[6]};
+assign fir_outs_reg[7] = fir_outs[7][`FIR_OUTS_SIZE-1]==0?{`PHASE_BIT'b000, fir_outs[7]}:{`PHASE_BIT'b111, fir_outs[7]};
+
+//对于多相滤波而言，这里需要保持每一个时钟都输出累加值，因此不必等到时钟累加到`PHASE_NUM -1再抽取
+assign fir_out_reg = (fir_outs_reg[0] + fir_outs_reg[1]
+		 + fir_outs_reg[2] + fir_outs_reg[3])
+		 + (fir_outs_reg[4] + fir_outs_reg[5]
+		 + fir_outs_reg[6] + fir_outs_reg[7]);
+assign fir_out = (fir_out_reg>>(`FIR_OUT_SIZE - `OUT_WIDTH));//移位,去除HN的放大作用
+
+endmodule 

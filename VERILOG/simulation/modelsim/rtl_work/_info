@@ -1,0 +1,373 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\matlab\lesson\8.SDR\VERILOG\simulation\modelsim
+vdata_fir
+I`I?7n<=0Z12HO@hSeTBhS1
+VO<FCW]Yee0cN@PMIz9MAb0
+Z1 dE:\matlab\lesson\8.SDR\VERILOG\simulation\modelsim
+w1464076124
+8E:/matlab/lesson/8.SDR/VERILOG/data_fir.v
+FE:/matlab/lesson/8.SDR/VERILOG/data_fir.v
+L0 4
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG -O0
+!i10b 1
+!s100 U`KnbO5K5dPAJGA7GoV2C2
+!s85 0
+!s108 1464402309.497000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/data_fir.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/data_fir.v|
+!s101 -O0
+vdecimation
+IGeaSS0AF6J3WJXIPKFCHH3
+VU7Mgz_ikMdA2z>YWm8IGR3
+R1
+w1464401923
+8E:/matlab/lesson/8.SDR/VERILOG/decimation.v
+FE:/matlab/lesson/8.SDR/VERILOG/decimation.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 5oHe_Yl6FGCB`mQS=LKg62
+!s85 0
+!s108 1464402309.591000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/decimation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/decimation.v|
+!s101 -O0
+vhdec_1_Verilog
+I44DhkI[]g[f<[E][cWo?23
+VKSa:4lomRkiASlkC@gnfO3
+R1
+w1463910867
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_1_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_1_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+nhdec_1_@verilog
+Z5 !s92 -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir -O0
+!i10b 1
+!s100 9Cc:cAW?h3Oj;UX<FBXA=2
+!s85 0
+!s108 1464402308.577000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_1_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_1_Verilog.v|
+!s101 -O0
+vhdec_2_Verilog
+IB_EICf3?_g80W127fD];o1
+VbI];?R`SL<2n^0M7G;o=73
+R1
+w1463921982
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_2_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_2_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+R5
+nhdec_2_@verilog
+!i10b 1
+!s100 9fDm35ogFF`onCBgiOY[l2
+!s85 0
+!s108 1464402308.671000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_2_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_2_Verilog.v|
+!s101 -O0
+vhdec_3_Verilog
+I4PHB9FoA=^9KOGT;YL]h[0
+VVGm<Tol9dC<INH1bSO]d_3
+R1
+w1463920809
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_3_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_3_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+R5
+nhdec_3_@verilog
+!i10b 1
+!s100 j8S1ISm2]U7]cjUF4F<;63
+!s85 0
+!s108 1464402308.764000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_3_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_3_Verilog.v|
+!s101 -O0
+vhdec_4_Verilog
+I`ML8CNEIh_?W6:5<Hb6Ji1
+VAIKPA_JcYY=TfUU?LT[Qf0
+R1
+w1463920858
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_4_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_4_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+R5
+nhdec_4_@verilog
+!i10b 1
+!s100 RLiRMBmb=h]88gWzT1L?j1
+!s85 0
+!s108 1464402308.873000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_4_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_4_Verilog.v|
+!s101 -O0
+vhdec_5_Verilog
+I_bEiE6:JOgfDE5<^6M5>b0
+VG6_7f39lD0>gmB]nGkY^U0
+R1
+w1463920892
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_5_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_5_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+R5
+nhdec_5_@verilog
+!i10b 1
+!s100 M17XT[S7`jiBTm@V7E5U82
+!s85 0
+!s108 1464402308.967000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_5_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_5_Verilog.v|
+!s101 -O0
+vhdec_6_Verilog
+IPRgR9b7j@aHD`L?eGiNGT2
+VE^L[5fDN162h5KBS@N:VP2
+R1
+w1463920919
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_6_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_6_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+R5
+nhdec_6_@verilog
+!i10b 1
+!s100 <F6Hc5GW7ClCGUX1[e0Vn2
+!s85 0
+!s108 1464402309.076000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_6_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_6_Verilog.v|
+!s101 -O0
+vhdec_7_Verilog
+IR164W70X<CYhUf_5WJ8j>3
+VIZ:a82[TceVRQg>dH0OHN2
+R1
+w1463920942
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_7_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_7_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+R5
+nhdec_7_@verilog
+!i10b 1
+!s100 ?dB8bM>[AZN]`jW3P=Gl?1
+!s85 0
+!s108 1464402309.201000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_7_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_7_Verilog.v|
+!s101 -O0
+vhdec_8_Verilog
+I`9:[=@Z^HHJI@kN8Q]H`L2
+VWNkDGbj^OZ?<HA1H=?Gb71
+R1
+w1463922103
+8E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_8_Verilog.v
+FE:/matlab/lesson/8.SDR/VERILOG/fir/hdec_8_Verilog.v
+L0 14
+R2
+r1
+31
+R3
+R5
+nhdec_8_@verilog
+!i10b 1
+!s100 gbJUQP_`PXB5W`O`E1AJd1
+!s85 0
+!s108 1464402309.310000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_8_Verilog.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/fir|E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_8_Verilog.v|
+!s101 -O0
+vinterpolation
+IZ0XM9Gk5A?4Jl0=F2J6Io1
+VZ@Xz8mARm1LmHhZLj4W580
+R1
+w1464076772
+8E:/matlab/lesson/8.SDR/VERILOG/interpolation.v
+FE:/matlab/lesson/8.SDR/VERILOG/interpolation.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 >?XZJeF[B:LcL?Hd6XDNB1
+!s85 0
+!s108 1464402309.794000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/interpolation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/interpolation.v|
+!s101 -O0
+vout_da_data
+Ik0GJE>8YTIgJ0Jh5FCOe]1
+V53GX>hW`TGkkgM_DhRQX>1
+R1
+w1464079657
+8E:/matlab/lesson/8.SDR/VERILOG/out_da_data.v
+FE:/matlab/lesson/8.SDR/VERILOG/out_da_data.v
+L0 21
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 l@bo8Xe9ZbV:n7F0k:Cdm2
+!s85 0
+!s108 1464402308.218000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/out_da_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/out_da_data.v|
+!s101 -O0
+vout_da_data_vlg_tst
+!i10b 1
+!s100 VnOFD5>old22j<:3@_XLY2
+I^b816FK2`2bcgXTcX0;^R1
+VU`9CRb^@Gjl>LmW3o3Eo@0
+R1
+w1464073699
+8E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim/out_da_data.vt
+FE:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim/out_da_data.vt
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1464402309.887000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim/out_da_data.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim|E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim/out_da_data.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim -O0
+vpolypase_fir
+I4XgAYUL5785ZBlFCdKFI42
+VX[Rb70@[^T2MnWNDBk8kO2
+R1
+w1464402132
+8E:/matlab/lesson/8.SDR/VERILOG/polypase_fir.v
+FE:/matlab/lesson/8.SDR/VERILOG/polypase_fir.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 hfPKVm?DD]M@Yl4OKO04I3
+!s85 0
+!s108 1464402309.685000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/polypase_fir.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/polypase_fir.v|
+!s101 -O0
+vradix_fir_65
+IJS=3L@??Vjj;j7iO>z9gj3
+VW5h4O1MTLi92c?cS>VL5T0
+R1
+w1463899583
+8E:/matlab/lesson/8.SDR/VERILOG/radix_fir_65.v
+FE:/matlab/lesson/8.SDR/VERILOG/radix_fir_65.v
+L0 14
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 I:2dE7>UX=DBUPkJVSi893
+!s85 0
+!s108 1464402308.483000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/radix_fir_65.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/radix_fir_65.v|
+!s101 -O0
+vrom
+IVH?dOa?>^Q12>m8kO0b4F2
+Vg<b;8l_FYHlAZ:YRSYlm>2
+R1
+w1463812247
+8E:/matlab/lesson/8.SDR/VERILOG/rom.v
+FE:/matlab/lesson/8.SDR/VERILOG/rom.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 mCz5SP1e0a1dZzg;z`ZEk0
+!s85 0
+!s108 1464402308.327000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/rom.v|
+!s101 -O0
+vsin_dds
+IXaJTMg>nKcGdoV9aleCcF1
+VKdIgj6=o`UW[LgWf>3cLI2
+R1
+w1463923470
+8E:/matlab/lesson/8.SDR/VERILOG/sin_dds.v
+FE:/matlab/lesson/8.SDR/VERILOG/sin_dds.v
+L0 5
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 HG7@AgjSbYcFdk_cTl:dM0
+!s85 0
+!s108 1464402308.405000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/sin_dds.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/sin_dds.v|
+!s101 -O0
+vwave_add
+IknaGAo^RiVQmOcNcSAk_M1
+V?aNigYCG>08_>o>CZ<H`b1
+R1
+w1463907323
+8E:/matlab/lesson/8.SDR/VERILOG/wave_add.v
+FE:/matlab/lesson/8.SDR/VERILOG/wave_add.v
+L0 4
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 WYCgYZ_noILQAiOmeHOZ93
+!s85 0
+!s108 1464402309.404000
+!s107 E:/matlab/lesson/8.SDR/VERILOG/wave_add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/matlab/lesson/8.SDR/VERILOG|E:/matlab/lesson/8.SDR/VERILOG/wave_add.v|
+!s101 -O0

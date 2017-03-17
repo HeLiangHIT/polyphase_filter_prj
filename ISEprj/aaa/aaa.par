@@ -1,0 +1,135 @@
+Release 12.4 par M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+XZ-PC::  Mon May 23 23:01:04 2016
+
+par -w -intstyle ise -ol high -t 1 aaa_map.ncd aaa.ncd aaa.pcf 
+
+
+Constraints file: aaa.pcf.
+Loading device for application Rf_Device from file '3s1000.nph' in environment D:\Xilinx\ISE_DS\ISE\.
+   "aaa" is an NCD, version 3.2, device xc3s1000, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.39 2010-11-18".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs                   2 out of 173     1%
+      Number of LOCed IOBs                   2 out of 2     100%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:cea9) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:cea9) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:cea9) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+Phase 4.2  Initial Clock and IO Placement (Checksum:cea9) REAL time: 1 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:cea9) REAL time: 1 secs 
+
+Phase 6.8  Global Placement
+Phase 6.8  Global Placement (Checksum:cea9) REAL time: 1 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:cea9) REAL time: 1 secs 
+
+Phase 8.18  Placement Optimization
+Phase 8.18  Placement Optimization (Checksum:cea9) REAL time: 1 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:cea9) REAL time: 1 secs 
+
+Total REAL time to Placer completion: 1 secs 
+Total CPU  time to Placer completion: 1 secs 
+Writing design to file aaa.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 1 unrouted;      REAL time: 1 secs 
+
+Phase  2  : 1 unrouted;      REAL time: 1 secs 
+
+Phase  3  : 0 unrouted;      REAL time: 1 secs 
+
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+
+Updating file: aaa.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 1 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 2 secs 
+Total CPU time to PAR completion: 2 secs 
+
+Peak Memory Usage:  240 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file aaa.ncd
+
+
+
+PAR done!

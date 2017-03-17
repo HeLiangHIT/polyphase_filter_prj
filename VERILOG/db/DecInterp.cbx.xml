@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DecInterp">
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|data_fir:fir1|wave_add:iadd1|sin_dds:i2|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|decimation:fir3|wave_add:iadd2|sin_dds:i2|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|interpolation:fir4|wave_add:iadd2|sin_dds:i2|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|polypase_fir:fir2|wave_add:iadd2|sin_dds:i1|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|data_fir:fir1|wave_add:iadd1|sin_dds:i1|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|decimation:fir3|wave_add:iadd2|sin_dds:i1|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|interpolation:fir4|wave_add:iadd2|sin_dds:i1|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|out_da_data|polypase_fir:fir2|wave_add:iadd2|sin_dds:i2|rom:rom_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7d91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

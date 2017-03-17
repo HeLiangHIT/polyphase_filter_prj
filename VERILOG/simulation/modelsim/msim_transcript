@@ -1,0 +1,155 @@
+# Reading D:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DecInterp_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/out_da_data.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module out_da_data
+# 
+# Top level modules:
+# 	out_da_data
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/rom.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/sin_dds.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sin_dds
+# 
+# Top level modules:
+# 	sin_dds
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/radix_fir_65.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module radix_fir_65
+# 
+# Top level modules:
+# 	radix_fir_65
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_1_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_1_Verilog
+# 
+# Top level modules:
+# 	hdec_1_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_2_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_2_Verilog
+# 
+# Top level modules:
+# 	hdec_2_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_3_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_3_Verilog
+# 
+# Top level modules:
+# 	hdec_3_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_4_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_4_Verilog
+# 
+# Top level modules:
+# 	hdec_4_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_5_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_5_Verilog
+# 
+# Top level modules:
+# 	hdec_5_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_6_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_6_Verilog
+# 
+# Top level modules:
+# 	hdec_6_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_7_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_7_Verilog
+# 
+# Top level modules:
+# 	hdec_7_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/fir {E:/matlab/lesson/8.SDR/VERILOG/fir/hdec_8_Verilog.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hdec_8_Verilog
+# 
+# Top level modules:
+# 	hdec_8_Verilog
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/wave_add.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module wave_add
+# 
+# Top level modules:
+# 	wave_add
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/data_fir.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module data_fir
+# 
+# Top level modules:
+# 	data_fir
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/decimation.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decimation
+# 
+# Top level modules:
+# 	decimation
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/polypase_fir.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module polypase_fir
+# 
+# Top level modules:
+# 	polypase_fir
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG {E:/matlab/lesson/8.SDR/VERILOG/interpolation.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module interpolation
+# 
+# Top level modules:
+# 	interpolation
+# 
+# vlog -vlog01compat -work work +incdir+E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim {E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim/out_da_data.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module out_da_data_vlg_tst
+# 
+# Top level modules:
+# 	out_da_data_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  out_da_data_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps out_da_data_vlg_tst 
+# Loading work.out_da_data_vlg_tst
+# Loading work.out_da_data
+# Loading work.data_fir
+# Loading work.wave_add
+# Loading work.sin_dds
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.radix_fir_65
+# Loading work.polypase_fir
+# Loading work.hdec_1_Verilog
+# Loading work.hdec_2_Verilog
+# Loading work.hdec_3_Verilog
+# Loading work.hdec_4_Verilog
+# Loading work.hdec_5_Verilog
+# Loading work.hdec_6_Verilog
+# Loading work.hdec_7_Verilog
+# Loading work.hdec_8_Verilog
+# Loading work.decimation
+# Loading work.interpolation
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ms
+# Break in Module out_da_data_vlg_tst at E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim/out_da_data.vt line 35
+# Simulation Breakpoint: Break in Module out_da_data_vlg_tst at E:/matlab/lesson/8.SDR/VERILOG/simulation/modelsim/out_da_data.vt line 35
+# MACRO ./DecInterp_run_msim_rtl_verilog.do PAUSED at line 33

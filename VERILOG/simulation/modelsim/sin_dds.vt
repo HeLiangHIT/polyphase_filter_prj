@@ -1,0 +1,37 @@
+
+`timescale 1 ns/ 1 ns
+`define clk_cycle 10
+module sin_dds_vlg_tst();
+
+reg clk;
+reg [9:0] fword;
+reg [9:0] pword;
+reg rst_n;
+
+wire data_change;
+wire [7:0] data_out;
+				 
+sin_dds i1 (
+	.clk(clk),
+	.data_change(data_change),
+	.data_out(data_out),
+	.fword(fword),
+	.pword(pword),
+	.rst_n(rst_n)
+);
+initial 
+begin 
+	clk = 0;
+	rst_n = 1;
+	fword = 10'd512;
+	pword = 10'd512;
+	#`clk_cycle rst_n = 0;
+	#`clk_cycle rst_n = 1;
+	#40000 $stop;
+	$display("Running testbench"); 
+end 
+
+always  #`clk_cycle  clk = ~clk;
+
+endmodule
+

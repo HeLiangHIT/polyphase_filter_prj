@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at decimation.v(326): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at interpolation.v(116): always construct contains both blocking and non-blocking assignments

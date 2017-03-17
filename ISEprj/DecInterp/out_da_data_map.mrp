@@ -1,0 +1,244 @@
+Release 12.4 Map M.81d (nt64)
+Xilinx Mapping Report File for Design 'out_da_data'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off
+-c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+Target Device  : xc3s1000
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.52.76.2 $
+Mapped Date    : Sat May 28 10:37:52 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:        10,027 out of  15,360   65%
+  Number of 4 input LUTs:            13,056 out of  15,360   85%
+Logic Distribution:
+  Number of occupied Slices:          7,530 out of   7,680   98%
+    Number of Slices containing only related logic:   7,530 out of   7,530 100%
+    Number of Slices containing unrelated logic:          0 out of   7,530   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:      13,156 out of  15,360   85%
+    Number used as logic:            13,028
+    Number used as a route-thru:        100
+    Number used as Shift registers:      28
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 21 out of     173   12%
+  Number of RAMB16s:                      8 out of      24   33%
+  Number of BUFGMUXs:                     8 out of       8  100%
+
+Average Fanout of Non-Clock Nets:                2.53
+
+Peak Memory Usage:  549 MB
+Total REAL time to MAP completion:  52 secs 
+Total CPU time to MAP completion:   47 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network fir1/iadd1/i2/rom_inst1/douta<0> has no load.
+INFO:LIT:395 - The above info message is repeated 7 more times for the following
+   (max. 5 shown):
+   fir1/iadd1/i1/rom_inst1/douta<0>,
+   fir2/iadd2/i2/rom_inst1/douta<0>,
+   fir2/iadd2/i1/rom_inst1/douta<0>,
+   fir3/iadd2/i2/rom_inst1/douta<0>,
+   fir3/iadd2/i1/rom_inst1/douta<0>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  16 block(s) removed
+  46 block(s) optimized away
+   8 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "fir1/iadd1/i2/rom_inst1/douta<0>" is sourceless and has been
+removed.
+The signal "fir1/iadd1/i1/rom_inst1/douta<0>" is sourceless and has been
+removed.
+The signal "fir2/iadd2/i2/rom_inst1/douta<0>" is sourceless and has been
+removed.
+The signal "fir2/iadd2/i1/rom_inst1/douta<0>" is sourceless and has been
+removed.
+The signal "fir3/iadd2/i2/rom_inst1/douta<0>" is sourceless and has been
+removed.
+The signal "fir3/iadd2/i1/rom_inst1/douta<0>" is sourceless and has been
+removed.
+The signal "fir4/iadd2/i2/rom_inst1/douta<0>" is sourceless and has been
+removed.
+The signal "fir4/iadd2/i1/rom_inst1/douta<0>" is sourceless and has been
+removed.
+Unused block "fir1/iadd1/i1/rom_inst1/GND" (ZERO) removed.
+Unused block "fir1/iadd1/i1/rom_inst1/VCC" (ONE) removed.
+Unused block "fir1/iadd1/i2/rom_inst1/GND" (ZERO) removed.
+Unused block "fir1/iadd1/i2/rom_inst1/VCC" (ONE) removed.
+Unused block "fir2/iadd2/i1/rom_inst1/GND" (ZERO) removed.
+Unused block "fir2/iadd2/i1/rom_inst1/VCC" (ONE) removed.
+Unused block "fir2/iadd2/i2/rom_inst1/GND" (ZERO) removed.
+Unused block "fir2/iadd2/i2/rom_inst1/VCC" (ONE) removed.
+Unused block "fir3/iadd2/i1/rom_inst1/GND" (ZERO) removed.
+Unused block "fir3/iadd2/i1/rom_inst1/VCC" (ONE) removed.
+Unused block "fir3/iadd2/i2/rom_inst1/GND" (ZERO) removed.
+Unused block "fir3/iadd2/i2/rom_inst1/VCC" (ONE) removed.
+Unused block "fir4/iadd2/i1/rom_inst1/GND" (ZERO) removed.
+Unused block "fir4/iadd2/i1/rom_inst1/VCC" (ONE) removed.
+Unused block "fir4/iadd2/i2/rom_inst1/GND" (ZERO) removed.
+Unused block "fir4/iadd2/i2/rom_inst1/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		fir1/iadd1/i1/rom_inst1/BU2/XST_GND
+VCC 		fir1/iadd1/i1/rom_inst1/BU2/XST_VCC
+GND 		fir1/iadd1/i2/rom_inst1/BU2/XST_GND
+VCC 		fir1/iadd1/i2/rom_inst1/BU2/XST_VCC
+GND 		fir2/iadd2/i1/rom_inst1/BU2/XST_GND
+VCC 		fir2/iadd2/i1/rom_inst1/BU2/XST_VCC
+GND 		fir2/iadd2/i2/rom_inst1/BU2/XST_GND
+VCC 		fir2/iadd2/i2/rom_inst1/BU2/XST_VCC
+GND 		fir3/iadd2/i1/rom_inst1/BU2/XST_GND
+VCC 		fir3/iadd2/i1/rom_inst1/BU2/XST_VCC
+GND 		fir3/iadd2/i2/rom_inst1/BU2/XST_GND
+VCC 		fir3/iadd2/i2/rom_inst1/BU2/XST_VCC
+GND 		fir4/iadd2/i1/rom_inst1/BU2/XST_GND
+VCC 		fir4/iadd2/i1/rom_inst1/BU2/XST_VCC
+GND 		fir4/iadd2/i2/rom_inst1/BU2/XST_GND
+VCC 		fir4/iadd2/i2/rom_inst1/BU2/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DA_clk                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_reset_n                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA_value<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk_in                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| key<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| key<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| key<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| rst_n                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

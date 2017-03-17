@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Afirsttest.ucf -p xc3s1000-ft256-4 aaa.ngc aaa.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o aaa_map.ncd aaa.ngd aaa.pcf 
+par -w -intstyle ise -ol high -t 1 aaa_map.ncd aaa.ncd aaa.pcf 
+par -w -intstyle ise -ol high -t 1 aaa_map.ncd aaa.ncd aaa.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Afirsttest.ucf -p xc3s1000-ft256-4 aaa.ngc aaa.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o aaa_map.ncd aaa.ngd aaa.pcf 
+par -w -intstyle ise -ol high -t 1 aaa_map.ncd aaa.ncd aaa.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 aaa.ngc aaa.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o aaa_map.ncd aaa.ngd aaa.pcf 
+par -w -intstyle ise -ol high -t 1 aaa_map.ncd aaa.ncd aaa.pcf 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 aaa.ngc aaa.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 aaa.ngc aaa.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o aaa_map.ncd aaa.ngd aaa.pcf 
+par -w -intstyle ise -ol high -t 1 aaa_map.ncd aaa.ncd aaa.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 aaa.ngc aaa.ngd  
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/aaa/aaa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 aaa.ngc aaa.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o aaa_map.ncd aaa.ngd aaa.pcf 
+par -w -intstyle ise -ol high -t 1 aaa_map.ncd aaa.ncd aaa.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml aaa.twx aaa.ncd -o aaa.twr aaa.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f aaa.ut aaa.ncd 

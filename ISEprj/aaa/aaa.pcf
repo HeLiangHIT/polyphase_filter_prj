@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map M.81d on Mon May 23 23:01:03 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "aaa_in" LOCATE = SITE "E3" LEVEL 1;
+COMP "aaa_out" LOCATE = SITE "F4" LEVEL 1;
+SCHEMATIC END;
+

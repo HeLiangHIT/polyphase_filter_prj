@@ -1,0 +1,16 @@
+Fitter Status : Failed - Mon Jun 06 15:04:16 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : DecInterp
+Top-level Entity Name : out_da_data
+Family : Cyclone III
+Device : EP3C16Q240C8
+Timing Models : Final
+Total logic elements : 12,323 / 15,408 ( 80 % )
+    Total combinational functions : 11,554 / 15,408 ( 75 % )
+    Dedicated logic registers : 10,016 / 15,408 ( 65 % )
+Total registers : 10016
+Total pins : 21 / 161 ( 13 % )
+Total virtual pins : 0
+Total memory bits : 57,344 / 516,096 ( 11 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

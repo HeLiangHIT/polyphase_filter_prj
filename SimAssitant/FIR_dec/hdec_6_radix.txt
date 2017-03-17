@@ -1,0 +1,98 @@
+*----------------------------------------------------------------------------*
+* This solution is produced by Radix-2^r Multiple-Constant-Multiplication    *
+* (MCM) generator. The program is writen by M.L. Berrandjia based on the     *
+* arithmetic specifications given by A.K. Oudjida.                           *
+* Copyright (c) 2015 CDTA (www.cdta.dz). Personal use of this material is    *
+* permitted. However, permission to use this material for any other purposes *
+* must be obtained from the CDTA by sending an email to a_oudjida@cdta.dz    *
+*----------------------------------------------------------------------------*
+
+* Radix-2^r MCM generator (release version 2.0.2)
+* Date: 2016-5-22 Time: 13:39:18
+* Run for an adder-cost optimization
+
+*** User given constants (H set) ***
+
+-1
+2
+7
+8
+-6
+-30
+-34
+17
+119
+220
+255
+199
+91
+-2
+-37
+-25
+-1
+9
+6
+0
+-1
+
+*** Radix-2^r MCM solution of the reduced set (Hmin set) including positive/odd constants only ***
+
+  3 = +1<<1 +1<<0
+  5 = +1<<2 +1<<0
+  7 = +1<<3 -1<<0
+  9 = -7<<0 +1<<4
+ 15 = -1<<0 +1<<4
+ 17 = +1<<0 +1<<4
+ 25 = -7<<0 +1<<5
+ 37 = +5<<0 +1<<5
+ 55 = +7<<0 +3<<4
+ 91 = -5<<0 +3<<5
+119 = +7<<0 +7<<4
+199 = +7<<0 +3<<6
+255 = -1<<0 +1<<8
+
+*** Radix-2^r MCM Solution for the user given constants (H set) ***
+
+ -1 = -1<<0
+  2 = +1<<1
+  7 = +1<<3 -1<<0
+  8 = +1<<3
+ -6 = -3<<1
+-30 = +1<<1 -1<<5
+-34 = -17<<1
+ 17 = +1<<0 +1<<4
+119 = +7<<0 +7<<4
+220 = +7<<2 +3<<6
+255 = -1<<0 +1<<8
+199 = +7<<0 +3<<6
+ 91 = -5<<0 +3<<5
+ -2 = -1<<1
+-37 = -5<<0 -1<<5
+-25 = +7<<0 -1<<5
+ -1 = -1<<0
+  9 = -7<<0 +1<<4
+  6 = +3<<1
+  0 = 0 
+ -1 = -1<<0
+
+With:
+
+  3 = +1<<1 +1<<0
+  5 = +1<<2 +1<<0
+
+
+*** Radix-2^r solution summary ***
+
+Lower-bound in adder-cost   = 12
+Upper-bound in Radix-2^r    = 15
+Adder-cost in Radix-2^r     = 13
+
+Lower-bound in adder-depth  = 3
+Upper-bound in Radix-2^r (adders connected in series)           = 3
+Upper-bound in Radix-2^r (adders connected in tree structure)   = 3
+
+Maximum constant bit-size (Nmax) in the Hmin set = 8
+Minimum constant bit-size (Nmin) in the Hmin set = 2
+Number of constants (M_Hmin) of the Hmin set     = 12
+Optimal value of r (Radix-2^r) for upper-bound   = 5
+Optimal value of r (Radix-2^r) for adder-cost    = 4

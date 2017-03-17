@@ -1,0 +1,31 @@
+
+`timescale 1 ns/ 1 ns
+`define clk_cycle 10
+module wave_add_tb();
+
+reg clk;
+reg rst_n;
+wire data_change;
+wire [7:0] data_out;
+				 
+wave_add i1 (
+	.clk(clk),
+	.data_change(data_change),
+	.data_out(data_out),
+	.rst_n(rst_n)
+);
+
+initial 
+begin 
+	clk = 0;
+	rst_n = 1;
+	#`clk_cycle rst_n = 0;
+	#`clk_cycle rst_n = 1;
+	#400000 $stop;
+	$display("Running testbench"); 
+end 
+
+always  #`clk_cycle  clk = ~clk;
+
+endmodule
+

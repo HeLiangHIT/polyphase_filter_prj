@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\matlab\lesson\8.SDR\ISEprj\DecInterp\out_da_data.ncd
+OUTFILE=E:\matlab\lesson\8.SDR\ISEprj\DecInterp\out_da_data.bit
+FAMILY=Spartan3
+PART=xc3s1000-4ft256
+WORKINGDIR=E:\matlab\lesson\8.SDR\ISEprj\DecInterp
+LICENSE=ISE
+USER_INFO=15690819_173552794_661

@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map M.81d on Sat May 28 10:38:35 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rst_n" LOCATE = SITE "C3" LEVEL 1;
+COMP "DA_clk" LOCATE = SITE "N8" LEVEL 1;
+COMP "DA_value<0>" LOCATE = SITE "J2" LEVEL 1;
+COMP "DA_value<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "DA_value<2>" LOCATE = SITE "J3" LEVEL 1;
+COMP "DA_value<3>" LOCATE = SITE "K1" LEVEL 1;
+COMP "DA_value<4>" LOCATE = SITE "K2" LEVEL 1;
+COMP "DA_value<5>" LOCATE = SITE "L2" LEVEL 1;
+COMP "DA_value<6>" LOCATE = SITE "L3" LEVEL 1;
+COMP "DA_value<7>" LOCATE = SITE "M1" LEVEL 1;
+COMP "DA_value<8>" LOCATE = SITE "M2" LEVEL 1;
+COMP "DA_value<9>" LOCATE = SITE "N1" LEVEL 1;
+COMP "key<0>" LOCATE = SITE "G3" LEVEL 1;
+COMP "key<1>" LOCATE = SITE "G4" LEVEL 1;
+COMP "key<2>" LOCATE = SITE "F3" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "T9" LEVEL 1;
+COMP "DA_reset_n" LOCATE = SITE "B1" LEVEL 1;
+COMP "DA_value<10>" LOCATE = SITE "N2" LEVEL 1;
+COMP "DA_value<11>" LOCATE = SITE "P1" LEVEL 1;
+COMP "DA_value<12>" LOCATE = SITE "P2" LEVEL 1;
+COMP "DA_value<13>" LOCATE = SITE "R1" LEVEL 1;
+SCHEMATIC END;
+

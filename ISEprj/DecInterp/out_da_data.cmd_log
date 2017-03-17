@@ -1,0 +1,79 @@
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 
+xst -intstyle ise -ifn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.xst" -ofn "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc DDS.ucf -p xc3s1000-ft256-4 out_da_data.ngc out_da_data.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o out_da_data_map.ncd out_da_data.ngd out_da_data.pcf 
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd out_da_data.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr out_da_data.pcf -ucf DDS.ucf 
+bitgen -intstyle ise -f out_da_data.ut out_da_data.ncd 

@@ -1,0 +1,164 @@
+Flow report for DecInterp
+Mon Jun 06 15:04:17 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Flow Failed - Mon Jun 06 15:04:16 2016           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; DecInterp                                        ;
+; Top-level Entity Name              ; out_da_data                                      ;
+; Family                             ; Cyclone III                                      ;
+; Device                             ; EP3C16Q240C8                                     ;
+; Timing Models                      ; Final                                            ;
+; Total logic elements               ; 12,323 / 15,408 ( 80 % )                         ;
+;     Total combinational functions  ; 11,554 / 15,408 ( 75 % )                         ;
+;     Dedicated logic registers      ; 10,016 / 15,408 ( 65 % )                         ;
+; Total registers                    ; 10016                                            ;
+; Total pins                         ; 21 / 161 ( 13 % )                                ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 57,344 / 516,096 ( 11 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
++------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/06/2016 14:59:55 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DecInterp           ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++--------------------------------------+----------------------------------------------------+---------------+-------------+-----------------------+
+; Assignment Name                      ; Value                                              ; Default Value ; Entity Name ; Section Id            ;
++--------------------------------------+----------------------------------------------------+---------------+-------------+-----------------------+
+; COMPILER_SIGNATURE_ID                ; 158515234524859.146519639511016                    ; --            ; --          ; --                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                 ; --            ; --          ; sin_dds_vlg_tst       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                 ; --            ; --          ; wave_add_tb           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                 ; --            ; --          ; data_fir_vlg_tst      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                 ; --            ; --          ; decimation_vlg_tst    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                 ; --            ; --          ; polypase_fir_vlg_tst  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                 ; --            ; --          ; interpolation_vlg_tst ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                 ; --            ; --          ; out_da_data_vlg_tst   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; out_da_data_vlg_tst                                ; --            ; --          ; eda_simulation        ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                        ; --            ; --          ; eda_simulation        ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                          ; <None>        ; --          ; --                    ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                    ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/sin_dds.vt                     ; --            ; --          ; sin_dds_vlg_tst       ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/wave_add.vt                    ; --            ; --          ; wave_add_tb           ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/data_fir.vt                    ; --            ; --          ; data_fir_vlg_tst      ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/decimation.vt                  ; --            ; --          ; decimation_vlg_tst    ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/polypase_fir.vt                ; --            ; --          ; polypase_fir_vlg_tst  ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/interpolation.vt               ; --            ; --          ; interpolation_vlg_tst ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/out_da_data.vt                 ; --            ; --          ; out_da_data_vlg_tst   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; sin_dds_vlg_tst                                    ; --            ; --          ; sin_dds_vlg_tst       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; wave_add_tb                                        ; --            ; --          ; wave_add_tb           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; data_fir_vlg_tst                                   ; --            ; --          ; data_fir_vlg_tst      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; decimation_vlg_tst                                 ; --            ; --          ; decimation_vlg_tst    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; polypase_fir_vlg_tst                               ; --            ; --          ; polypase_fir_vlg_tst  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; interpolation_vlg_tst                              ; --            ; --          ; interpolation_vlg_tst ;
+; EDA_TEST_BENCH_MODULE_NAME           ; out_da_data_vlg_tst                                ; --            ; --          ; out_da_data_vlg_tst   ;
+; EDA_TEST_BENCH_NAME                  ; sin_dds_vlg_tst                                    ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; wave_add_tb                                        ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; data_fir_vlg_tst                                   ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; decimation_vlg_tst                                 ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; polypase_fir_vlg_tst                               ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; interpolation_vlg_tst                              ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; out_da_data_vlg_tst                                ; --            ; --          ; eda_simulation        ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 ms                                              ; --            ; --          ; sin_dds_vlg_tst       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 ms                                              ; --            ; --          ; wave_add_tb           ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                               ; --            ; --          ; data_fir_vlg_tst      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 us                                             ; --            ; --          ; decimation_vlg_tst    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 us                                             ; --            ; --          ; polypase_fir_vlg_tst  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 us                                             ; --            ; --          ; interpolation_vlg_tst ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                               ; --            ; --          ; out_da_data_vlg_tst   ;
+; EDA_TIME_SCALE                       ; 1 ps                                               ; --            ; --          ; eda_simulation        ;
+; ENABLE_SIGNALTAP                     ; On                                                 ; --            ; --          ; --                    ;
+; IP_TOOL_NAME                         ; ROM: 1-PORT                                        ; --            ; --          ; --                    ;
+; IP_TOOL_VERSION                      ; 13.0                                               ; --            ; --          ; --                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                 ; --            ; --          ; --                    ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                  ; --            ; --          ; --                    ;
+; PARTITION_COLOR                      ; 16764057                                           ; --            ; out_da_data ; Top                   ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                              ; --            ; out_da_data ; Top                   ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                             ; --            ; out_da_data ; Top                   ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                ; --            ; --          ; --                    ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW              ; --            ; --          ; --                    ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                       ; --            ; --          ; --                    ;
+; SLD_FILE                             ; E:/matlab/lesson/8.SDR/VHDL/stp1_auto_stripped.stp ; --            ; --          ; --                    ;
+; TOP_LEVEL_ENTITY                     ; out_da_data                                        ; DecInterp     ; --          ; --                    ;
+; USE_SIGNALTAP_FILE                   ; stp1.stp                                           ; --            ; --          ; --                    ;
++--------------------------------------+----------------------------------------------------+---------------+-------------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 544 MB              ; 00:00:20                           ;
+; Fitter               ; 00:00:41     ; 1.0                     ; 867 MB              ; 00:00:36                           ;
+; Total                ; 00:01:02     ; --                      ; --                  ; 00:00:56                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; XZ-PC            ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter               ; XZ-PC            ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DecInterp -c DecInterp
+quartus_fit --read_settings_files=on --write_settings_files=off DecInterp -c DecInterp
+
+
+

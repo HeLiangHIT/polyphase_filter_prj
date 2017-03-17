@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/out_da_data.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/data_fir.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/decimation.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_1_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_2_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_3_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_4_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_5_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_6_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_7_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/fir/hdec_8_Verilog.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/interpolation.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/polypase_fir.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/radix_fir_65.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/sin_dds.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1677" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;E:/matlab/lesson/8.SDR/ISEprj/DecInterp/src/wave_add.v\&quot; into library work</arg>
+</msg>
+
+</messages>
+

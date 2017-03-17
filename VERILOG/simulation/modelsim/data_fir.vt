@@ -1,0 +1,29 @@
+
+`timescale 1 ns/ 1 ns
+`define clk_cycle 10
+module data_fir_vlg_tst();
+reg clk;
+reg rst_n; 
+wire [7:0] fir_out;
+wire [7:0] data_out;
+
+data_fir data_fir1 (
+	.clk(clk),
+	.fir_out(fir_out),
+	.data_out(data_out),
+	.rst_n(rst_n)
+);
+initial 
+begin 
+	clk = 0;
+	rst_n = 1;
+	#`clk_cycle rst_n = 0;
+	#`clk_cycle rst_n = 1;
+	#400000 $stop;
+	$display("Running testbench"); 
+end 
+
+always  #`clk_cycle  clk = ~clk;
+
+endmodule
+

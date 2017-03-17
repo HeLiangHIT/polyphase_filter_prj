@@ -1,0 +1,31 @@
+#NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "aaa_in"  LOC = "E3"  ; 
+NET "aaa_out"   LOC = "F4"   ; #MSK 模式管脚
+#NET "key5[0]"  LOC = "G3"  ;
+#NET "key5[1]"  LOC = "G4"  ;
+#NET "key5[2]"  LOC = "F3"  ;
+#NET "key5[3]"  LOC = "F4"  ;
+#NET "key5[4]"  LOC = "E3"  ;
+#NET "freqword[5]"  LOC = "E4"  ;
+#NET "freqword[6]"  LOC = "D3"  ;
+
+#NET "sp_w"	LOC = "G14" ;	#伪随机码
+
+#NET "key_phase_ctrl[0]" LOC = "E3" ;
+#NET "key_phase_ctrl[1]" LOC = "E4" ;
+#NET "key_phase_ctrl[2]" LOC = "D3" ;
+
+#NET "DA_value[0]"  LOC = "J2"  ;#信源S1
+#NET "DA_value[10]"  LOC = "N2"  ; #信源S2
+#NET "DA_value[11]"  LOC = "P1"  ; #信源S3
+#NET "DA_value[12]"  LOC = "P2"  ; #信源S2
+#NET "DA_value[13]"  LOC = "R1"  ; #信源S3
+#NET "DA_value[1]"  LOC = "J1"  ; #信源S4
+#NET "DA_value[2]"  LOC = "J3"  ; #信源S5
+#NET "DA_value[3]"  LOC = "K1"  ; #信源S6
+#NET "DA_value[4]"  LOC = "K2"  ; #信源S7
+#NET "DA_value[5]"  LOC = "L2"  ;#信源S1
+#NET "DA_value[6]"  LOC = "L3"  ; #信源S2
+#NET "DA_value[7]"  LOC = "M1"  ; #信源S3
+#NET "DA_value[8]"  LOC = "M2"  ; #信源S4
+#NET "DA_value[9]"  LOC = "N1"  ; #信源S5

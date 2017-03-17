@@ -1,0 +1,43 @@
+
+`timescale 1 ps/ 1 ps
+`define clk_cycle 10
+module out_da_data_vlg_tst();
+reg clk_in;
+reg [2:0] key;
+reg rst_n;
+wire DA_clk;
+wire DA_reset_n;
+wire [13:0] DA_value;
+
+out_da_data i1 (
+	.DA_clk(DA_clk),
+	.DA_reset_n(DA_reset_n),
+	.DA_value(DA_value),
+	.clk_in(clk_in),
+	.key(key),
+	.rst_n(rst_n)
+);
+
+initial 
+begin 
+	clk_in = 0;
+	rst_n = 1;
+	key = 3'd0;
+	#`clk_cycle rst_n = 0;
+	#`clk_cycle rst_n = 1;
+	#40000 key = 3'd1;
+	#40000 key = 3'd2;
+	#40000 key = 3'd3;
+	#40000 key = 3'd4;
+	#40000 key = 3'd5;
+	#40000 key = 3'd6;
+	#40000 key = 3'd7;
+	#40000 $stop;
+	$display("Running testbench"); 
+end 
+
+always  #`clk_cycle  clk_in = ~clk_in;
+
+
+endmodule
+

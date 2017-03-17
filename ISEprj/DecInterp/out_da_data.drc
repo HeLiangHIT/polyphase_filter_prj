@@ -1,0 +1,8 @@
+Release 12.4 Drc M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Sat May 28 10:42:48 2016
+
+drc -z out_da_data.ncd out_da_data.pcf
+
+DRC detected 0 errors and 0 warnings.

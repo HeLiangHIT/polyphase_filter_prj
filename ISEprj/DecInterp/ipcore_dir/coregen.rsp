@@ -1,0 +1,3 @@
+NEWPROJECT "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/ipcore_dir/coregen.cgp"
+SETPROJECT "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/ipcore_dir/coregen.cgp"
+LAUNCHXCO "E:/matlab/lesson/8.SDR/ISEprj/DecInterp/ipcore_dir/rom.xco"

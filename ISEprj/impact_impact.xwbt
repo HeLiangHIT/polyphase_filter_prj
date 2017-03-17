@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\matlab\lesson\8.SDR\ISEprj\impact.xsl
+OUTFILE=E:\matlab\lesson\8.SDR\ISEprj\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=E:\matlab\lesson\8.SDR\ISEprj
+LICENSE=iMPACT
+USER_INFO=iMPACT

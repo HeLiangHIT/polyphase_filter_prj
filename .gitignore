@@ -1,0 +1,10 @@
+# Windows image file caches
+Thumbs.db
+*.rar
+bak
+
+
+
+
+# Windows shortcuts
+*.lnk

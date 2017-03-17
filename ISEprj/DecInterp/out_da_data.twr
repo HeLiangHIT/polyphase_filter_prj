@@ -1,0 +1,129 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n 3
+-fastpaths -xml out_da_data.twx out_da_data.ncd -o out_da_data.twr
+out_da_data.pcf -ucf DDS.ucf
+
+Design file:              out_da_data.ncd
+Physical constraint file: out_da_data.pcf
+Device,package,speed:     xc3s1000,ft256,-4 (PRODUCTION 1.39 2010-11-18)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_in
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+rst_n       |    4.227(R)|   -1.652(R)|clk_in_IBUF       |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk_in to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+DA_clk      |   15.319(R)|clk_in_IBUF       |   0.000|
+DA_value<6> |   22.407(R)|clk_in_IBUF       |   0.000|
+DA_value<7> |   21.139(R)|clk_in_IBUF       |   0.000|
+DA_value<8> |   20.495(R)|clk_in_IBUF       |   0.000|
+DA_value<9> |   22.172(R)|clk_in_IBUF       |   0.000|
+DA_value<10>|   21.756(R)|clk_in_IBUF       |   0.000|
+DA_value<11>|   21.555(R)|clk_in_IBUF       |   0.000|
+DA_value<12>|   23.384(R)|clk_in_IBUF       |   0.000|
+DA_value<13>|   22.593(R)|clk_in_IBUF       |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |   22.602|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk_in         |DA_clk         |   12.303|
+key<0>         |DA_clk         |   14.305|
+key<0>         |DA_value<6>    |   12.737|
+key<0>         |DA_value<7>    |   13.371|
+key<0>         |DA_value<8>    |   11.642|
+key<0>         |DA_value<9>    |   11.117|
+key<0>         |DA_value<10>   |   12.695|
+key<0>         |DA_value<11>   |   12.645|
+key<0>         |DA_value<12>   |   12.947|
+key<0>         |DA_value<13>   |   13.449|
+key<1>         |DA_clk         |   15.189|
+key<1>         |DA_value<6>    |   16.588|
+key<1>         |DA_value<7>    |   16.607|
+key<1>         |DA_value<8>    |   12.440|
+key<1>         |DA_value<9>    |   17.425|
+key<1>         |DA_value<10>   |   16.725|
+key<1>         |DA_value<11>   |   17.023|
+key<1>         |DA_value<12>   |   15.900|
+key<1>         |DA_value<13>   |   14.760|
+key<2>         |DA_clk         |   15.279|
+key<2>         |DA_value<6>    |   14.804|
+key<2>         |DA_value<7>    |   15.386|
+key<2>         |DA_value<8>    |   14.166|
+key<2>         |DA_value<9>    |   16.609|
+key<2>         |DA_value<10>   |   15.786|
+key<2>         |DA_value<11>   |   15.040|
+key<2>         |DA_value<12>   |   14.740|
+key<2>         |DA_value<13>   |   13.989|
+rst_n          |DA_clk         |   12.434|
+rst_n          |DA_reset_n     |    6.635|
+rst_n          |DA_value<6>    |   12.335|
+rst_n          |DA_value<7>    |   13.497|
+rst_n          |DA_value<8>    |   12.789|
+rst_n          |DA_value<9>    |   12.942|
+rst_n          |DA_value<10>   |   12.287|
+rst_n          |DA_value<11>   |   13.936|
+rst_n          |DA_value<12>   |   13.198|
+rst_n          |DA_value<13>   |   12.672|
+---------------+---------------+---------+
+
+
+Analysis completed Sat May 28 10:41:47 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 417 MB
+
+
+

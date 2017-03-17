@@ -1,0 +1,8 @@
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_1_Verilog.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_2_Verilog.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_3_Verilog.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_4_Verilog.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_5_Verilog.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_6_Verilog.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_7_Verilog.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "hdec_8_Verilog.v"]

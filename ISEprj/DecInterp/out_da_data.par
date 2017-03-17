@@ -1,0 +1,286 @@
+Release 12.4 par M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+XZ-PC::  Sat May 28 10:38:46 2016
+
+par -w -intstyle ise -ol high -t 1 out_da_data_map.ncd out_da_data.ncd
+out_da_data.pcf 
+
+
+Constraints file: out_da_data.pcf.
+Loading device for application Rf_Device from file '3s1000.nph' in environment D:\Xilinx\ISE_DS\ISE\.
+   "out_da_data" is an NCD, version 3.2, device xc3s1000, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.39 2010-11-18".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        8 out of 8     100%
+   Number of External IOBs                  21 out of 173    12%
+      Number of LOCed IOBs                  21 out of 21    100%
+
+   Number of RAMB16s                         8 out of 24     33%
+   Number of Slices                       7530 out of 7680   98%
+      Number of SLICEMs                     22 out of 3840    1%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 11 secs 
+Finished initial Timing Analysis.  REAL time: 11 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 11 secs 
+Total CPU  time at the beginning of Placer: 10 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:18b83a72) REAL time: 12 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:18b83a72) REAL time: 12 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:18b83a72) REAL time: 12 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:c3dcfe16) REAL time: 14 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:c3dcfe16) REAL time: 14 secs 
+
+Phase 6.8  Global Placement
+...........................
+...............................................................................................................................................................
+.....
+...............................................................................................................................................
+....................................
+..
+Phase 6.8  Global Placement (Checksum:73abe4d6) REAL time: 47 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:73abe4d6) REAL time: 47 secs 
+
+Phase 8.18  Placement Optimization
+Phase 8.18  Placement Optimization (Checksum:53161df7) REAL time: 59 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:53161df7) REAL time: 59 secs 
+
+Total REAL time to Placer completion: 1 mins 
+Total CPU  time to Placer completion: 58 secs 
+Writing design to file out_da_data.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 51628 unrouted;      REAL time: 1 mins 4 secs 
+
+Phase  2  : 45294 unrouted;      REAL time: 1 mins 18 secs 
+
+Phase  3  : 11208 unrouted;      REAL time: 1 mins 25 secs 
+
+Phase  4  : 11513 unrouted; (Par is working to improve performance)     REAL time: 1 mins 28 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 42 secs 
+
+Updating file: out_da_data.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 48 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 31 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 32 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 33 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 mins 36 secs 
+WARNING:Route:455 - CLK Net:fir3/clks_6 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fir3/clks_4 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fir2/clks_5 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fir4/clk_org may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fir3/clks_2 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fir3/clks_5 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fir2/clks_2 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fir2/clks_6 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 2 mins 37 secs 
+Total CPU time to Router completion: 2 mins 33 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_1 |      BUFGMUX6| No   |  199 |  0.312     |  1.021      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_0 |      BUFGMUX1| No   |  199 |  0.523     |  1.224      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_3 |      BUFGMUX5| No   |  198 |  0.419     |  1.139      |
++---------------------+--------------+------+------+------------+-------------+
+|         clk_in_IBUF |      BUFGMUX0| No   | 2052 |  0.523     |  1.223      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_4 |      BUFGMUX2| No   |  193 |  0.434     |  1.157      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_0 |      BUFGMUX7| No   |  204 |  0.379     |  1.082      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_1 |      BUFGMUX4| No   |  199 |  0.374     |  1.106      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_3 |      BUFGMUX3| No   |  198 |  0.408     |  1.121      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_2 |         Local|      |  196 |  0.216     |  3.063      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_2 |         Local|      |  196 |  0.767     |  3.648      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_4 |         Local|      |  194 |  0.917     |  4.019      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_5 |         Local|      |  199 |  0.571     |  3.421      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_7 |         Local|      |  197 |  0.472     |  3.590      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_6 |         Local|      |  195 |  0.781     |  3.732      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir3/clks_7 |         Local|      |  197 |  0.523     |  3.550      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_5 |         Local|      |  199 |  0.458     |  3.786      |
++---------------------+--------------+------+------+------------+-------------+
+|         fir2/clks_6 |         Local|      |  196 |  0.660     |  3.888      |
++---------------------+--------------+------+------+------------+-------------+
+|        fir4/clk_org |         Local|      |   24 |  0.227     |  3.185      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.250ns|     N/A|           0
+  2/clks_1                                  | HOLD        |     0.778ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.292ns|     N/A|           0
+  2/clks_0                                  | HOLD        |     0.792ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.452ns|     N/A|           0
+  2/clks_3                                  | HOLD        |     0.803ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.450ns|     N/A|           0
+  3/clks_2                                  | HOLD        |     0.530ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    22.602ns|     N/A|           0
+  _in_IBUF                                  | HOLD        |     0.708ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.661ns|     N/A|           0
+  2/clks_2                                  | HOLD        |     0.488ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.344ns|     N/A|           0
+  2/clks_4                                  | HOLD        |     0.806ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     6.348ns|     N/A|           0
+  3/clks_4                                  | HOLD        |     0.288ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     8.795ns|     N/A|           0
+  3/clks_0                                  | HOLD        |     0.748ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.143ns|     N/A|           0
+  3/clks_1                                  | HOLD        |     0.764ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.438ns|     N/A|           0
+  3/clks_5                                  | HOLD        |     0.492ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.974ns|     N/A|           0
+  2/clks_7                                  | HOLD        |     0.731ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.498ns|     N/A|           0
+  3/clks_6                                  | HOLD        |     0.359ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.828ns|     N/A|           0
+  3/clks_7                                  | HOLD        |     0.232ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.500ns|     N/A|           0
+  2/clks_5                                  | HOLD        |     0.315ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     4.934ns|     N/A|           0
+  3/clks_3                                  | HOLD        |     0.787ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     5.654ns|     N/A|           0
+  2/clks_6                                  | HOLD        |     0.533ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net fir | SETUP       |         N/A|     4.230ns|     N/A|           0
+  4/clk_org                                 | HOLD        |     0.471ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 2 mins 39 secs 
+Total CPU time to PAR completion: 2 mins 35 secs 
+
+Peak Memory Usage:  606 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 8
+Number of info messages: 1
+
+Writing design to file out_da_data.ncd
+
+
+
+PAR done!

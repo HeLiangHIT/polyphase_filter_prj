@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun 06 15:00:20 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : DecInterp
+Top-level Entity Name : out_da_data
+Family : Cyclone III
+Total logic elements : 12,714
+    Total combinational functions : 11,554
+    Dedicated logic registers : 10,016
+Total registers : 10016
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 57,344
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
