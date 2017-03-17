@@ -30,6 +30,7 @@
 5. ISEprj 目录下是使用XILINX开发板进行实物运行所需的工程，在ISE14.0下建立。这么做是因为实验室只有这个开发板包含AD/DA模块。但是逻辑完全是VERILOG目录下的代码逻辑，只是需要IO映射而已。
 
 
+本文地址：https://github.com/HeLiangHIT/polyphase_filter_prj
 
 
 
